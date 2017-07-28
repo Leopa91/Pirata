@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74HC125
+D Quad buffer/line driver; 3-state; SO14
+K buffer, multiplexor
+$ENDCMP
+#
+#End Doc Library

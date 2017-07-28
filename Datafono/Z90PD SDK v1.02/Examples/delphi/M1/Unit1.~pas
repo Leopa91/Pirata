@@ -1,0 +1,72 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    lst1: TListBox;
+    btn1: TButton;
+    procedure btn1Click(Sender: TObject);
+  private
+    { Private declarations }
+      icdev:LongInt;
+    st:Integer;
+    wMsec:SmallInt;
+    mode:SmallInt;
+    snr1:pchar;
+    secnr:Byte;
+    snr2:pchar;
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+uses device;
+
+{$R *.dfm}
+
+procedure TForm1.btn1Click(Sender: TObject);
+
+begin
+icdev := IC_Initcomm(100);
+if icdev < 0 then
+begin
+  lst1.Items.Add('IC_InitComm Error');
+  Exit;
+end;
+lst1.Items.Add('IC_InitComm OK');
+
+st:= IC_ResetMifare(icdev, 2);
+if st<>0 then
+begin
+  lst1.Items.Add('IC_ResetMifare Error');
+  Exit;
+end;
+lst1.Items.Add('IC_ResetMifare OK');
+
+st:= IC_Card(icdev, 0, snr1);
+if st<>0 then
+begin
+  lst1.Items.Add('IC_Card Error');
+  exit;
+end;
+lst1.Items.Add('IC_Card OK');
+
+ st:= IC_Authentication(icdev,0, 0);
+ if st<>0 then
+ begin
+   lst1.Items.Add('IC_Authentication Error');
+   Exit;
+ end;
+ lst1.Items.Add('IC_Authentication OK');
+
+end.
+

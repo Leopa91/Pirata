@@ -1,0 +1,6 @@
+OPEN = \033[/1;1[;8;0;1;0]M
+CLOSE = \033[/M
+WR_BEGIN = \033[/51h
+WR_END = \033[/51l
+PREFIX = \x0
+SUFFIX = \x0

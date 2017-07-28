@@ -1,0 +1,8 @@
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\4442C#\D6\obj\Debug\ResolveAssemblyReference.cache
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\4442C#\D6\obj\Debug\D6.Form1.resources
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\4442C#\D6\obj\Debug\D6.Properties.Resources.resources
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\4442C#\D6\obj\Debug\D6.csproj.GenerateResource.Cache
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\4442C#\D6\bin\Debug\D6.exe
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\4442C#\D6\bin\Debug\D6.pdb
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\4442C#\D6\obj\Debug\D6.exe
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\4442C#\D6\obj\Debug\D6.pdb

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Max232
+D RS232
+K RS232
+$ENDCMP
+#
+#End Doc Library

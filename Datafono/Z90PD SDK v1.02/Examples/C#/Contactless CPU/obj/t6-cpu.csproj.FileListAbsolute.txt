@@ -1,0 +1,8 @@
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\CPU(C#)\t6-cpu\obj\Debug\ResolveAssemblyReference.cache
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\CPU(C#)\t6-cpu\obj\Debug\t6_cpu.Form1.resources
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\CPU(C#)\t6-cpu\obj\Debug\t6_cpu.Properties.Resources.resources
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\CPU(C#)\t6-cpu\obj\Debug\t6-cpu.csproj.GenerateResource.Cache
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\CPU(C#)\t6-cpu\bin\Debug\t6-cpu.exe
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\CPU(C#)\t6-cpu\bin\Debug\t6-cpu.pdb
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\CPU(C#)\t6-cpu\obj\Debug\t6-cpu.exe
+D:\工作文档\一些发卡的工程（供参考）\新增例程\D6\CPU(C#)\t6-cpu\obj\Debug\t6-cpu.pdb

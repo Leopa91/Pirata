@@ -1,0 +1,387 @@
+******************************************************************************
+                  TI ARM Linker PC v16.9.3                     
+******************************************************************************
+>> Linked Thu Jul 27 16:37:41 2017
+
+OUTPUT FILE NAME:   <Seiral_Corta.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000185d
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  00001cf6  0003e30a  R  X
+  SRAM                  20000000   00008000  00000ce6  0000731a  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00001cf8   00001cf8    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    0000194e   0000194e    r-x .text
+  00001bbc    00001bbc    000000fc   000000fc    r-- .const
+  00001cb8    00001cb8    00000040   00000040    r-- .cinit
+20000000    20000000    00000ce9   00000000    rw-
+  20000000    20000000    00000bc9   00000000    rw- .bss
+  20000bcc    20000bcc    00000100   00000000    rw- .stack
+  20000ccc    20000ccc    0000001d   00000000    rw- .data
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    0000194e     
+                  0000026c    00000414     Serial_corta.obj (.text:main)
+                  00000680    00000278     input_mux.obj (.text:datos_mux1)
+                  000008f8    00000230     input_mux.obj (.text:datos_mux2)
+                  00000b28    00000144     read_serial.obj (.text:UART1IntHandler)
+                  00000c6c    00000132     driverlib.lib : gpio.obj (.text:GPIOPadConfigSet)
+                  00000d9e    00000002     startup_ccs.obj (.text:FaultISR)
+                  00000da0    00000110     driverlib.lib : sysctl.obj (.text:SysCtlClockGet)
+                  00000eb0    000000d0     read_serial2.obj (.text:UART3IntHandler)
+                  00000f80    000000b0     Serial_corta.obj (.text:UART2IntHandler)
+                  00001030    000000a8     read_serial2.obj (.text:llenar_envio2)
+                  000010d8    000000a4     Serial_corta.obj (.text:UARTIntHandler)
+                  0000117c    000000a4     read_serial.obj (.text:llenar_envio)
+                  00001220    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  000012bc    0000008c     Ibutton.obj (.text:Ibutton1_write)
+                  00001348    0000008c     Ibutton.obj (.text:Ibutton2_write)
+                  000013d4    0000008c     read_serial2.obj (.text:read_serial2)
+                  00001460    0000008c     read_serial.obj (.text:read_serial)
+                  000014ec    0000007c     Ibutton.obj (.text:Ibutton1_read)
+                  00001568    0000007c     Ibutton.obj (.text:Ibutton2_read)
+                  000015e4    0000007a     rtsv7M4_T_le_v4SPD16_eabi.lib : memset_t2.obj (.text)
+                  0000165e    00000002     startup_ccs.obj (.text:IntDefaultHandler)
+                  00001660    00000074     read_serial.obj (.text:Borrar_data)
+                  000016d4    00000070     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.obj (.text)
+                  00001744    00000068                                   : copy_decompress_lzss.obj (.text:decompress:lzss)
+                  000017ac    00000058     Ibutton.obj (.text:Ibutton1_reset)
+                  00001804    00000058     Ibutton.obj (.text:Ibutton2_reset)
+                  0000185c    00000054     rtsv7M4_T_le_v4SPD16_eabi.lib : boot.obj (.text)
+                  000018b0    00000054                                   : exit.obj (.text)
+                  00001904    0000004c                                   : cpy_tbl.obj (.text)
+                  00001950    00000048     driverlib.lib : gpio.obj (.text:GPIOPinConfigure)
+                  00001998    00000048     input_mux.obj (.text:Send_data)
+                  000019e0    00000044     read_serial2.obj (.text:Borrar_data2)
+                  00001a24    00000040     input_mux.obj (.text:envio_error)
+                  00001a64    0000002a     driverlib.lib : gpio.obj (.text:GPIODirModeSet)
+                  00001a8e    00000022     input_mux.obj (.text:tama_u00f1o_mux)
+                  00001ab0    00000020     read_serial.obj (.text:clave_serial)
+                  00001ad0    0000001c     input_mux.obj (.text:CR)
+                  00001aec    0000001c     Ibutton.obj (.text:Delay)
+                  00001b08    0000001c     read_serial2.obj (.text:tama_u00f1o_serial2)
+                  00001b24    0000001c     read_serial.obj (.text:tama_u00f1o_serial)
+                  00001b40    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  00001b58    00000014                                   : _lock.obj (.text)
+                  00001b6c    00000012     driverlib.lib : gpio.obj (.text:GPIOPinTypeGPIOInput)
+                  00001b7e    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  00001b8c    0000000c                                   : copy_zero_init.obj (.text:decompress:ZI)
+                  00001b98    00000006     driverlib.lib : gpio.obj (.text:GPIOPinRead)
+                  00001b9e    00000006                   : gpio.obj (.text:GPIOPinWrite)
+                  00001ba4    00000006     startup_ccs.obj (.text:ResetISR)
+                  00001baa    00000006     driverlib.lib : sysctl.obj (.text:SysCtlDelay)
+                  00001bb0    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.obj (.text)
+                  00001bb4    00000002     startup_ccs.obj (.text:NmiSR)
+                  00001bb6    00000002     rtsv7M4_T_le_v4SPD16_eabi.lib : mpu_init.obj (.text)
+                  00001bb8    00000002                                   : startup.obj (.text)
+
+.const     0    00001bbc    000000fc     
+                  00001bbc    00000090     driverlib.lib : gpio.obj (.const:g_pui32GPIOBaseAddrs)
+                  00001c4c    0000006c                   : sysctl.obj (.const:g_pui32Xtals)
+
+.cinit     0    00001cb8    00000040     
+                  00001cb8    00000015     (.cinit..data.load) [load image, compression = lzss]
+                  00001ccd    00000003     --HOLE-- [fill = 0]
+                  00001cd0    0000000c     (__TI_handler_table)
+                  00001cdc    00000004     --HOLE-- [fill = 0]
+                  00001ce0    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00001ce8    00000010     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.bss       0    20000000    00000bc9     UNINITIALIZED
+                  20000000    000001f4     read_serial2.obj (.bss:dato_entrada_basura2)
+                  200001f4    000001f4     read_serial.obj (.bss:dato_entrada_basura)
+                  200003e8    000001f4     read_serial2.obj (.bss:dato_entrada_serial2)
+                  200005dc    000001f4     read_serial.obj (.bss:dato_entrada_serial)
+                  200007d0    00000100     Serial_corta.obj (.bss:dato_entrada)
+                  200008d0    00000090     read_serial2.obj (.bss:dato_salida_bloque12)
+                  20000960    00000090     read_serial.obj (.bss:dato_salida_bloque1)
+                  200009f0    00000090     read_serial.obj (.bss:dato_salida_bloque2)
+                  20000a80    00000090     read_serial.obj (.bss:dato_salida_bloque3)
+                  20000b10    00000090     read_serial.obj (.bss:dato_salida_serial)
+                  20000ba0    00000014     (.common:data_envio)
+                  20000bb4    0000000c     read_serial.obj (.bss:clave)
+                  20000bc0    00000005     read_serial.obj (.bss)
+                  20000bc5    00000003     read_serial2.obj (.bss)
+                  20000bc8    00000001     (.common:tiempo)
+
+.stack     0    20000bcc    00000100     UNINITIALIZED
+                  20000bcc    00000100     --HOLE--
+
+.data      0    20000ccc    0000001d     UNINITIALIZED
+                  20000ccc    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.data:$O1$$)
+                  20000cd8    00000008                                   : _lock.obj (.data:$O1$$)
+                  20000ce0    00000004                                   : stkdepth_vars.obj (.data)
+                  20000ce4    00000003     Serial_corta.obj (.data)
+                  20000ce7    00000002     input_mux.obj (.data)
+
+MODULE SUMMARY
+
+       Module                     code   ro data   rw data
+       ------                     ----   -------   -------
+    .\
+       read_serial.obj            804    0         1593   
+       read_serial2.obj           612    0         1147   
+       Serial_corta.obj           1384   0         279    
+       input_mux.obj              1390   0         3      
+       Ibutton.obj                732    0         0      
+       startup_ccs.obj            12     620       0      
+    +--+--------------------------+------+---------+---------+
+       Total:                     4934   620       3022   
+                                                          
+    C:/ti/TivaWare_C_Series-2.1.3.156/driverlib/ccs/Debug/driverlib.lib
+       gpio.obj                   450    144       0      
+       sysctl.obj                 278    108       0      
+    +--+--------------------------+------+---------+---------+
+       Total:                     728    252       0      
+                                                          
+    C:\ti\ccsv7\tools\compiler\ti-cgt-arm_16.9.3.LTS\lib\rtsv7M4_T_le_v4SPD16_eabi.lib
+       memcpy_t2.obj              156    0         0      
+       memset_t2.obj              122    0         0      
+       autoinit.obj               112    0         0      
+       copy_decompress_lzss.obj   104    0         0      
+       exit.obj                   84     0         12     
+       boot.obj                   84     0         0      
+       cpy_tbl.obj                76     0         0      
+       _lock.obj                  20     0         8      
+       args_main.obj              24     0         0      
+       copy_decompress_none.obj   14     0         0      
+       copy_zero_init.obj         12     0         0      
+       pre_init.obj               4      0         0      
+       stkdepth_vars.obj          0      0         4      
+       mpu_init.obj               2      0         0      
+       startup.obj                2      0         0      
+    +--+--------------------------+------+---------+---------+
+       Total:                     816    0         24     
+                                                          
+       Stack:                     0      0         256    
+       Linker Generated:          0      57        0      
+    +--+--------------------------+------+---------+---------+
+       Grand Total:               6478   929       3302   
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00001ce8 records: 2, size/record: 8, table size: 16
+	.data: load addr=00001cb8, load size=00000015 bytes, run addr=20000ccc, run size=0000001d bytes, compression=lzss
+	.bss: load addr=00001ce0, load size=00000008 bytes, run addr=20000000, run size=00000bc9 bytes, compression=zero_init
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00001cd0 records: 3, size/record: 4, table size: 12
+	index: 0, handler: __TI_decompress_lzss
+	index: 1, handler: __TI_decompress_none
+	index: 2, handler: __TI_zero_init
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                           
+-------   ----                           
+00001661  Borrar_data                    
+000019e1  Borrar_data2                   
+000018b1  C$$EXIT                        
+00001ad1  CR                             
+00001aed  Delay                          
+00001a65  GPIODirModeSet                 
+00000c6d  GPIOPadConfigSet               
+00001951  GPIOPinConfigure               
+00001b99  GPIOPinRead                    
+00001b6d  GPIOPinTypeGPIOInput           
+00001b9f  GPIOPinWrite                   
+000014ed  Ibutton1_read                  
+000017ad  Ibutton1_reset                 
+000012bd  Ibutton1_write                 
+00001569  Ibutton2_read                  
+00001805  Ibutton2_reset                 
+00001349  Ibutton2_write                 
+00001ba5  ResetISR                       
+UNDEFED   SHT$$INIT_ARRAY$$Base          
+UNDEFED   SHT$$INIT_ARRAY$$Limit         
+00001999  Send_data                      
+00000da1  SysCtlClockGet                 
+00001bab  SysCtlDelay                    
+00000b29  UART1IntHandler                
+00000f81  UART2IntHandler                
+00000eb1  UART3IntHandler                
+000010d9  UARTIntHandler                 
+20000ccc  __STACK_END                    
+00000100  __STACK_SIZE                   
+20000ccc  __STACK_TOP                    
+00001ce8  __TI_CINIT_Base                
+00001cf8  __TI_CINIT_Limit               
+00001cd0  __TI_Handler_Table_Base        
+00001cdc  __TI_Handler_Table_Limit       
+000016d5  __TI_auto_init                 
+20000ccc  __TI_cleanup_ptr               
+00001745  __TI_decompress_lzss           
+00001b7f  __TI_decompress_none           
+20000cd0  __TI_dtors_ptr                 
+20000cd4  __TI_enable_exit_profile_output
+ffffffff  __TI_pprof_out_hndl            
+ffffffff  __TI_prof_data_size            
+ffffffff  __TI_prof_data_start           
+00000000  __TI_static_base__             
+00001b8d  __TI_zero_init                 
+000015e5  __aeabi_memclr                 
+000015e5  __aeabi_memclr4                
+000015e5  __aeabi_memclr8                
+00001221  __aeabi_memcpy                 
+00001221  __aeabi_memcpy4                
+00001221  __aeabi_memcpy8                
+000015e7  __aeabi_memset                 
+000015e7  __aeabi_memset4                
+000015e7  __aeabi_memset8                
+ffffffff  __binit__                      
+ffffffff  __c_args__                     
+00001bb7  __mpu_init                     
+20000bcc  __stack                        
+00001b41  _args_main                     
+0000185d  _c_int00                       
+20000cd8  _lock                          
+00001b67  _nop                           
+00001b5f  _register_lock                 
+00001b59  _register_unlock               
+00001bb9  _system_post_cinit             
+00001bb1  _system_pre_init               
+20000cdc  _unlock                        
+000018b5  abort                          
+ffffffff  binit                          
+00001ab1  clave_serial                   
+00001905  copy_in                        
+20000ba0  data_envio                     
+00000681  datos_mux1                     
+000008f9  datos_mux2                     
+00001a25  envio_error                    
+000018bd  exit                           
+00000000  g_pfnVectors                   
+0000117d  llenar_envio                   
+00001031  llenar_envio2                  
+0000026d  main                           
+20000ce0  main_func_sp                   
+00001221  memcpy                         
+000015ed  memset                         
+00001461  read_serial                    
+000013d5  read_serial2                   
+00001a8f  tama_u00f1o_mux                
+00001b25  tama_u00f1o_serial             
+00001b09  tama_u00f1o_serial2            
+20000bc8  tiempo                         
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                           
+-------   ----                           
+00000000  __TI_static_base__             
+00000000  g_pfnVectors                   
+00000100  __STACK_SIZE                   
+0000026d  main                           
+00000681  datos_mux1                     
+000008f9  datos_mux2                     
+00000b29  UART1IntHandler                
+00000c6d  GPIOPadConfigSet               
+00000da1  SysCtlClockGet                 
+00000eb1  UART3IntHandler                
+00000f81  UART2IntHandler                
+00001031  llenar_envio2                  
+000010d9  UARTIntHandler                 
+0000117d  llenar_envio                   
+00001221  __aeabi_memcpy                 
+00001221  __aeabi_memcpy4                
+00001221  __aeabi_memcpy8                
+00001221  memcpy                         
+000012bd  Ibutton1_write                 
+00001349  Ibutton2_write                 
+000013d5  read_serial2                   
+00001461  read_serial                    
+000014ed  Ibutton1_read                  
+00001569  Ibutton2_read                  
+000015e5  __aeabi_memclr                 
+000015e5  __aeabi_memclr4                
+000015e5  __aeabi_memclr8                
+000015e7  __aeabi_memset                 
+000015e7  __aeabi_memset4                
+000015e7  __aeabi_memset8                
+000015ed  memset                         
+00001661  Borrar_data                    
+000016d5  __TI_auto_init                 
+00001745  __TI_decompress_lzss           
+000017ad  Ibutton1_reset                 
+00001805  Ibutton2_reset                 
+0000185d  _c_int00                       
+000018b1  C$$EXIT                        
+000018b5  abort                          
+000018bd  exit                           
+00001905  copy_in                        
+00001951  GPIOPinConfigure               
+00001999  Send_data                      
+000019e1  Borrar_data2                   
+00001a25  envio_error                    
+00001a65  GPIODirModeSet                 
+00001a8f  tama_u00f1o_mux                
+00001ab1  clave_serial                   
+00001ad1  CR                             
+00001aed  Delay                          
+00001b09  tama_u00f1o_serial2            
+00001b25  tama_u00f1o_serial             
+00001b41  _args_main                     
+00001b59  _register_unlock               
+00001b5f  _register_lock                 
+00001b67  _nop                           
+00001b6d  GPIOPinTypeGPIOInput           
+00001b7f  __TI_decompress_none           
+00001b8d  __TI_zero_init                 
+00001b99  GPIOPinRead                    
+00001b9f  GPIOPinWrite                   
+00001ba5  ResetISR                       
+00001bab  SysCtlDelay                    
+00001bb1  _system_pre_init               
+00001bb7  __mpu_init                     
+00001bb9  _system_post_cinit             
+00001cd0  __TI_Handler_Table_Base        
+00001cdc  __TI_Handler_Table_Limit       
+00001ce8  __TI_CINIT_Base                
+00001cf8  __TI_CINIT_Limit               
+20000ba0  data_envio                     
+20000bc8  tiempo                         
+20000bcc  __stack                        
+20000ccc  __STACK_END                    
+20000ccc  __STACK_TOP                    
+20000ccc  __TI_cleanup_ptr               
+20000cd0  __TI_dtors_ptr                 
+20000cd4  __TI_enable_exit_profile_output
+20000cd8  _lock                          
+20000cdc  _unlock                        
+20000ce0  main_func_sp                   
+ffffffff  __TI_pprof_out_hndl            
+ffffffff  __TI_prof_data_size            
+ffffffff  __TI_prof_data_start           
+ffffffff  __binit__                      
+ffffffff  __c_args__                     
+ffffffff  binit                          
+UNDEFED   SHT$$INIT_ARRAY$$Base          
+UNDEFED   SHT$$INIT_ARRAY$$Limit         
+
+[89 symbols]

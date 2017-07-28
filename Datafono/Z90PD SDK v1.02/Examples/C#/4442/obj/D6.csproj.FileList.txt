@@ -1,0 +1,2 @@
+obj\Debug\D6.exe
+obj\Debug\D6.pdb

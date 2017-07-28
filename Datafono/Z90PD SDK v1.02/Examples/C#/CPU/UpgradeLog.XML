@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="t6-cpu">
+</Property><Property Name="Solution File" Value="E:\T6\T6\Win32-Examples\C#\CPU\t6-cpu.sln">
+</Property><Property Name="User Options File" Value="E:\T6\T6\Win32-Examples\C#\CPU\t6-cpu.suo">
+</Property><Property Name="Date" Value="2014年12月16日星期二">
+</Property><Property Name="Time" Value="17:50">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="t6-cpu.sln" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\t6-cpu.sln">
+</Event><Event ErrorLevel="0" Project="" Source="t6-cpu.suo" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\t6-cpu.suo">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="t6-cpu.csproj" Description="Project file successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\t6-cpu.csproj">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Form1.cs" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Form1.Designer.cs" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Program.cs" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Properties\Settings.settings" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Form1.resx" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="Properties\Resources.resx" Description="File successfully backed up as E:\T6\T6\Win32-Examples\C#\CPU\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="t6-cpu.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="t6-cpu" Source="t6-cpu.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="t6-cpu.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="t6-cpu.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="t6-cpu" Source="t6-cpu.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

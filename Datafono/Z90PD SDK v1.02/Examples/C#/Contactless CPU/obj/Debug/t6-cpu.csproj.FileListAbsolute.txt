@@ -1,0 +1,16 @@
+E:\T6\T6\Win32-Examples\C#\CPU\bin\Debug\t6-cpu.exe
+E:\T6\T6\Win32-Examples\C#\CPU\bin\Debug\t6-cpu.pdb
+E:\T6\T6\Win32-Examples\C#\CPU\obj\Debug\ResolveAssemblyReference.cache
+E:\T6\T6\Win32-Examples\C#\CPU\obj\Debug\t6_cpu.Form1.resources
+E:\T6\T6\Win32-Examples\C#\CPU\obj\Debug\t6_cpu.Properties.Resources.resources
+E:\T6\T6\Win32-Examples\C#\CPU\obj\Debug\t6-cpu.csproj.GenerateResource.Cache
+E:\T6\T6\Win32-Examples\C#\CPU\obj\Debug\t6-cpu.exe
+E:\T6\T6\Win32-Examples\C#\CPU\obj\Debug\t6-cpu.pdb
+E:\T6\T6\Win32-Examples\C#\非接CPU\obj\Debug\t6-cpu.exe
+E:\T6\T6\Win32-Examples\C#\非接CPU\obj\Debug\t6-cpu.pdb
+E:\T6\T6\Win32-Examples\C#\非接CPU\bin\Debug\t6-cpu.exe
+E:\T6\T6\Win32-Examples\C#\非接CPU\bin\Debug\t6-cpu.pdb
+E:\T6\T6\Win32-Examples\C#\非接CPU\obj\Debug\ResolveAssemblyReference.cache
+E:\T6\T6\Win32-Examples\C#\非接CPU\obj\Debug\t6_cpu.Form1.resources
+E:\T6\T6\Win32-Examples\C#\非接CPU\obj\Debug\t6_cpu.Properties.Resources.resources
+E:\T6\T6\Win32-Examples\C#\非接CPU\obj\Debug\t6-cpu.csproj.GenerateResource.Cache
